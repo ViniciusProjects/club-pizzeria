@@ -1,6 +1,5 @@
 package br.com.clubpizzeria.test.product;
 
-import static org.junit.Assert.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import br.com.clubpizzeria.product.Product;
