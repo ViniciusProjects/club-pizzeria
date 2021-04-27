@@ -7,36 +7,39 @@ import br.com.clubpizzeria.product.Product;
 
 public class TestProduct {
 
-	@Test
-	public void createProduct() {
+	public Product create() {
 		Product product = new Product();
 		product.setDescription("pizza");
 		product.setId(1);
 		product.setPrice(30.0);
 		product.setQuantity(1);
-		assertNotNull(product);
+		return product;
+
 	}
 
 	@Test
 	public void productRegistration() {
-		Product product = new Product();
-		product.setDescription("pizza");
+		Product product = create();
 		assertEquals(product.getDescription(), "pizza");
 	}
 
 	@Test
 	public void testAddProducts() {
-		Product product = new Product();
-		product.setQuantity(10);
-		assertEquals(product.getQuantity(), 10);
+		Product product = create();
+		assertEquals(product.getQuantity(), 1);
 	}
 
 	@Test
 	public void testTotalValueInStock() {
-		Product product = new Product();
-		product.setQuantity(10);
-		product.setPrice(20);
+		Product product = create();
 		double calc = product.getPrice() * product.getQuantity();
-		assertEquals(200, calc);
+		assertEquals(30, calc);
+	}
+
+	@Test
+	public void testRemoveProducts() {
+		Product product = create();
+		product.removeProducts(1);
+		assertEquals(0, product.getQuantity());
 	}
 }
