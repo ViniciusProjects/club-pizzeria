@@ -13,7 +13,6 @@ public class TestProduct {
 		product.setPrice(30.0);
 		product.setQuantity(1);
 		return product;
-
 	}
 
 	@Test
