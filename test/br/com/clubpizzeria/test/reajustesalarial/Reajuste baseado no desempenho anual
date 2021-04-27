@@ -1,0 +1,13 @@
+Club-Pizzeria
+
+PT-BR
+
+Reajuste baseado no desempenho Anual.
+
+O sistema deve permitir que os funcionários recebam um reajuste salarial anual baseado em seu desempenho.
+
+Obedecendo ás seguintes regras:
+
+* Se o desempenho foi "A DESEJAR", reajuste será de apenas 3% do salário;
+* Se o desempenho foi "BOM", reajuste será de 15% do salário;
+* Se o desempenho foi "OTIMO", reajuste será de 20% do salário;
