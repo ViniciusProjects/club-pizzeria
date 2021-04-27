@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import br.com.clubpizzeria.product.Product;
 
-public class TestProduct {
+public class ProductTest {
 
 	public Product create() {
 		Product product = new Product();
