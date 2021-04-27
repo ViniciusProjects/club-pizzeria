@@ -16,6 +16,9 @@ public class Product {
 		this.description = description;
 	}
 
+	public Product() {
+	}
+
 	public double totalValueInStock() {
 		return price * quantity;
 	}
